@@ -4,19 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Te Puia - Home</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="home.css"/>
 </head>
 <body>
-  <!-- Hero Video -->
+  <!-- Hero Section -->
   <div class="hero">
     <video class="hero-video" autoplay muted loop playsinline>
-      <source src="20240626_111238.mp4" type="video/mp4">
+      <source src="videos/20240626_111238.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
+    <div class="hero-overlay"></div>
     <div class="hero-content">
       <h1>Welcome to Te Puia</h1>
       <nav class="navbar">
-        <a href="index.html">Home</a>
+        <a href="index.html" class="active">Home</a>
         <a href="attractions.html">Attractions</a>
         <a href="booking.html">Book a Visit</a>
       </nav>
@@ -39,7 +40,7 @@
       </ul>
     </div>
 
-    <div class="grid-item">
+    <div class="grid-item image-card">
       <img src="images/welcome.jpg" alt="Welcome to Te Puia" />
     </div>
   </main>
