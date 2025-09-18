@@ -4,7 +4,8 @@ body {
   font-family: 'Segoe UI', Arial, sans-serif;
   color: #333;
   background: #fafafa;
-  line-height: 1.6;
+  line-height: 1.8;
+  font-size: 20px; /* Bigger base text */
 }
 
 /* Hero Section */
@@ -44,17 +45,24 @@ body {
 }
 
 .hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+  font-size: 5rem; /* Huge hero title */
+  font-weight: 900; /* Extra bold */
+  margin-bottom: 2rem;
+  text-shadow: 3px 3px 10px rgba(0,0,0,0.8);
+}
+
+.hero p {
+  font-size: 2rem; /* Large supporting text */
+  font-weight: 600;
 }
 
 /* Navbar */
 .navbar a {
-  margin: 0 15px;
+  margin: 0 25px;
+  font-size: 1.5rem; /* Larger nav links */
   color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 700;
   transition: color 0.3s;
 }
 
@@ -67,25 +75,33 @@ body {
 /* Grid Content */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
-  padding: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 35px;
+  padding: 60px;
 }
 
 .grid-item {
   background: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
   transition: transform 0.2s, box-shadow 0.2s;
+  font-size: 1.3rem; /* Larger body text */
+  font-weight: 500;
 }
 
 .grid-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
 }
 
-.image-card img {
+.grid-item h2 {
+  font-size: 2.2rem; /* Bigger section headings */
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.grid-item img {
   width: 100%;
   border-radius: 12px;
 }
@@ -95,6 +111,7 @@ footer {
   background: #222;
   color: white;
   text-align: center;
-  padding: 20px;
-  font-size: 0.9rem;
+  padding: 30px;
+  font-size: 1.2rem; /* Larger footer text */
+  font-weight: 600;
 }
